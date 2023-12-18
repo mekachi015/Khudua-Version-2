@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content = "width = device-width, inital-scale=1.0">
+        <title> Khudua - Contact Us </title>
+
+        <link rel="stylesheet" href="CSS One.css">
+        <!-- <link rel="stylesheet" href="CSS Two.css"> -->
+       
+        <!--<?php include('submit_query.php'); ?>-->
+    </head>
+
+    <body>
+      
+
+        <nav class = "navbar">
+
+            <a href ="index.html">
+                <img src="Assets/khudua logo small.jpg" alt ="Khudua Logo Small" class = "navbar-logo">
+            </a>
+
+            <div class = "company-name"> 
+                Khudua Resources
+            </div>
+
+            <ul>
+                <li><a href = "index.html"> Home</a></li>
+                <li><a href = "About Us.html"> About Us</a></li>
+                <li><a href = "Products.html">Products </a></li>
+                <li> <a href= "services.html">Services</a></li>
+                <li><a href = "Find Us.html"> Find Us</a></li>
+            </ul>
+        </nav>
+
+        
+        <div class="address-section">
+            <div class="section-title">Contact Information</div>
+            <p>Sales: 0713190600</p>
+            <p>Customer Support: 0720660930</p>
+            <p>Email Address: <a href="mailto:Marvin@khudua.co.za">Marvin@khudua.co.za</a></p>
+        </div>
+    
+        <div class="container">
+            <div class="address-section">
+                <div class="section-title">Main Office</div>
+                <p>
+                    Stand 294 Moshate<br>
+                    Ga_Sekororo<br>
+                    Trichardtsdal, 0890
+                </p>
+                <a class="map-link" href="https://www.google.com/maps?q=Stand+294+Moshate+Ga_Sekororo+Trichardtsdal+0890" target="_blank">View on Google Maps</a>
+            </div>
+    
+            <div class="address-section">
+                <div class="section-title">Polokwane Office</div>
+                <p class="address">
+                    1 Basil Street<br>
+                    Ivy Park<br>
+                    Polokwane, 0699
+                </p>
+                <a class="map-link" href="https://www.google.com/maps?q=1+Basil+Street+Ivy+Park+Polokwane+0699" target="_blank">View on Google Maps</a>
+            </div>
+
+            <div class = "address-section">
+                <div class="section-title">Johannesburg Office</div>
+                <p class="address">
+                    3 Ealing Crescent<br>
+                    Bryanston<br>
+                    Johannesburg, 2191
+                </p>
+                <a class="map-link" href="https://www.google.com/maps?q=3+Ealing+Crescent+Bryanston+Johannesburg+2191" target="_blank">View on Google Maps</a>
+            </div>
+     
+        </div>
+        
+
+        <!--<?php
+        if ($success_message) {
+            echo '<div class="success-message">' . $success_message . '</div>';
+        }
+        ?>-->
+
+        <div class="contact-form"> <!--The input should look-->
+            
+            <div class="section-title"> Enquiries </div>
+            
+            <form action="submit_query.php" method="POST">
+                <div class="form-input">
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="full-name" required>
+                </div>
+                
+                <div class="form-input">
+                    <label for="cellphone">Cellphone Number:</label>
+                    <input type="tel" id="cellphone" name="cellphone" required>
+                </div>
+    
+                <div class="form-input">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+    
+                <div class="form-input">
+                    <label for="message">How Can We Help You?</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+    
+                <button class="submit-button" type="submit">Submit Query</button>
+            </form>
+        </div>
+    </body>
+
+
+</html>
