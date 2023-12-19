@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    padding:0;
     font-family: 'Arial', sans-serif;
 }
 
@@ -20,7 +21,7 @@ body {
 
 .company-name{
     color: white;
-    padding-right: 850px;
+    padding-right: 685px;
 }
 
 
@@ -36,6 +37,22 @@ body {
 .navbar li {
     float: left;
    
+}
+
+@media (max-width:768px){
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar li{
+        float: none;
+        margin-bottom: 10px;
+    }
+
+    .company-name{
+        padding-right: 0;
+    }
 }
 
 .navbar li a {
@@ -55,7 +72,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 100vh;
+    height: auto;
     margin-top: 60px;
     
 }
@@ -98,7 +115,7 @@ button{
 .image-link {
     text-decoration: none; 
     width: 250px;
-    height: 250px;
+    height: auto;
 }
 
 .image-box {
@@ -153,11 +170,16 @@ button{
     height : 85px
 }
 
+.mission-title{
+    font-size: 25px;
+    color: #1F397C;
+}
 .hMission{
     display: flex;
     justify-content: center;
     color: #1F397C;
     font-size: 15px;
+    padding-bottom: 12px;
 }
 
 .AboutUsP{
@@ -227,6 +249,13 @@ button{
     border-radius: 5px;
 }
 
+
+.form-input {
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
 .form-input label {
     display: block;
     font-weight: bold;
@@ -236,11 +265,30 @@ button{
 
 .form-input input, .form-input textarea {
     width: 100%;
-    padding: 5px;
+    padding: 8px;
+    margin-top: 5px;
     border: 1px solid #ccc;
-    border-radius: 2.5px;
+    border-radius: 5px;
 }
 
+@media(min-width:76px){
+
+    .form-input{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .form-input label{
+        margin-right: 20px;
+    }
+
+    .form-input input, .form-input textarea{
+        width: 60%;
+        padding-right: 20px;
+    }
+}
 .form-input textarea {
     height: 95px;
 }
